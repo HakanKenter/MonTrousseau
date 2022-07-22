@@ -13,6 +13,10 @@
 		5564181528899D1300FEFFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5564181328899D1300FEFFC3 /* Main.storyboard */; };
 		5564181728899D1500FEFFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5564181628899D1500FEFFC3 /* Assets.xcassets */; };
 		5564181A28899D1500FEFFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5564181828899D1500FEFFC3 /* LaunchScreen.storyboard */; };
+		556418232889A01500FEFFC3 /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556418222889A01500FEFFC3 /* AddController.swift */; };
+		556418252889A04000FEFFC3 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556418242889A04000FEFFC3 /* DetailController.swift */; };
+		556418282889A34300FEFFC3 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556418272889A34300FEFFC3 /* Item.swift */; };
+		5564182A2889A3CE00FEFFC3 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556418292889A3CE00FEFFC3 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		5564181628899D1500FEFFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5564181928899D1500FEFFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5564181B28899D1500FEFFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556418222889A01500FEFFC3 /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		556418242889A04000FEFFC3 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		556418272889A34300FEFFC3 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		556418292889A3CE00FEFFC3 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		5564180C28899D1300FEFFC3 /* MonTrousseau */ = {
 			isa = PBXGroup;
 			children = (
+				556418262889A33200FEFFC3 /* Model */,
+				5564182128899FE800FEFFC3 /* Controller */,
 				5564180D28899D1300FEFFC3 /* AppDelegate.swift */,
 				5564180F28899D1300FEFFC3 /* SceneDelegate.swift */,
-				5564181128899D1300FEFFC3 /* ViewController.swift */,
 				5564181328899D1300FEFFC3 /* Main.storyboard */,
 				5564181628899D1500FEFFC3 /* Assets.xcassets */,
 				5564181828899D1500FEFFC3 /* LaunchScreen.storyboard */,
 				5564181B28899D1500FEFFC3 /* Info.plist */,
 			);
 			path = MonTrousseau;
+			sourceTree = "<group>";
+		};
+		5564182128899FE800FEFFC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5564181128899D1300FEFFC3 /* ViewController.swift */,
+				556418222889A01500FEFFC3 /* AddController.swift */,
+				556418242889A04000FEFFC3 /* DetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		556418262889A33200FEFFC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				556418272889A34300FEFFC3 /* Item.swift */,
+				556418292889A3CE00FEFFC3 /* Helper.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +167,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5564181228899D1300FEFFC3 /* ViewController.swift in Sources */,
+				5564182A2889A3CE00FEFFC3 /* Helper.swift in Sources */,
 				5564180E28899D1300FEFFC3 /* AppDelegate.swift in Sources */,
 				5564181028899D1300FEFFC3 /* SceneDelegate.swift in Sources */,
+				556418252889A04000FEFFC3 /* DetailController.swift in Sources */,
+				556418282889A34300FEFFC3 /* Item.swift in Sources */,
+				556418232889A01500FEFFC3 /* AddController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
